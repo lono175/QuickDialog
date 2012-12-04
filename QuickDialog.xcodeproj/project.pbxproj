@@ -164,7 +164,6 @@
 		F2F23A26152DD48B00EB6685 /* QPickerTabDelimitedStringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A1F152DD48B00EB6685 /* QPickerTabDelimitedStringParser.m */; };
 		F2F23A26152DD48B00EB6687 /* QuickDialogController+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A26152DD48B00EB6686 /* QuickDialogController+Helpers.m */; };
 		F2F23A26152DD48B00EB6689 /* QuickDialogController+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F23A26152DD48B00EB6688 /* QuickDialogController+Helpers.h */; };
-		F951A4A4166DF4C200A8FEF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80B0E3913E052DF00FA85CA /* Foundation.framework */; };
 		F951A4AA166DF4C200A8FEF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F951A4A8166DF4C200A8FEF9 /* InfoPlist.strings */; };
 		F951A52A166DF54800A8FEF9 /* DOAutocompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C3FC114EDF0510036C9E7 /* DOAutocompleteTextField.m */; };
 		F951A52D166DF56A00A8FEF9 /* QPickerElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A1A152DD48B00EB6685 /* QPickerElement.m */; };
@@ -284,7 +283,6 @@
 		F951A5A0166DF57700A8FEF9 /* QWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8BE13EC905B00E3922B /* QWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F951A5A1166DF57700A8FEF9 /* DOAutocompleteTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 194C3FC014EDF0510036C9E7 /* DOAutocompleteTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F951A5A2166DF57700A8FEF9 /* QuickDialogController+Animations.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C50E22D2B906D69252BE7B4 /* QuickDialogController+Animations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F951A5A6166E02D300A8FEF9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86035C513E0539A00CB1785 /* MapKit.framework */; };
 		F951A5A7166E02D900A8FEF9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86035C313E0538600CB1785 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -504,8 +502,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F951A5A7166E02D900A8FEF9 /* CoreLocation.framework in Frameworks */,
-				F951A5A6166E02D300A8FEF9 /* MapKit.framework in Frameworks */,
-				F951A4A4166DF4C200A8FEF9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1485,6 +1481,7 @@
 				F951A4AE166DF4C200A8FEF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
