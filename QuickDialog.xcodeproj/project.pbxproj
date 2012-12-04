@@ -42,7 +42,7 @@
 		2C5423DB145ADF2B0026A152 /* QTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8BB13EC905B00E3922B /* QTextElement.m */; };
 		2C5423DD145ADF2B0026A152 /* QWebElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8BD13EC905B00E3922B /* QWebElement.m */; };
 		2C5423DF145ADF2B0026A152 /* QWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8BF13EC905B00E3922B /* QWebViewController.m */; };
-		2CE450B3145AE43D00B77D0E /* libQuickDialog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C542393145ADEBD0026A152 /* libQuickDialog.a */; };
+		2CE450B3145AE43D00B77D0E /* libQuickDialogLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C542393145ADEBD0026A152 /* libQuickDialogLib.a */; };
 		5C50E215ECB7C7D4B503AA4C /* QuickDialogController+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50EBF53D28B761CBA809FF /* QuickDialogController+Animations.m */; };
 		5C50E665E1BD1D5B1B8B944E /* navigation.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E404FC15CFA443ABBB5C /* navigation.json */; };
 		5C50E6D6FE14BF78231F9671 /* QuickDialogController+Animations.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C50E22D2B906D69252BE7B4 /* QuickDialogController+Animations.h */; };
@@ -179,7 +179,7 @@
 /* Begin PBXFileReference section */
 		194C3FC014EDF0510036C9E7 /* DOAutocompleteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOAutocompleteTextField.h; path = quickdialog/DOAutocompleteTextField.h; sourceTree = SOURCE_ROOT; };
 		194C3FC114EDF0510036C9E7 /* DOAutocompleteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOAutocompleteTextField.m; path = quickdialog/DOAutocompleteTextField.m; sourceTree = SOURCE_ROOT; };
-		2C542393145ADEBD0026A152 /* libQuickDialog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQuickDialog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C542393145ADEBD0026A152 /* libQuickDialogLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQuickDialogLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE450A9145ADFAC00B77D0E /* libQuickDialog-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libQuickDialog-Prefix.pch"; path = "libQuickDialog/libQuickDialog-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		5C50E22D2B906D69252BE7B4 /* QuickDialogController+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "QuickDialogController+Animations.h"; path = "quickdialog/QuickDialogController+Animations.h"; sourceTree = SOURCE_ROOT; };
 		5C50E404FC15CFA443ABBB5C /* navigation.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; name = navigation.json; path = QuickDialog.xcodeproj/navigation.json; sourceTree = SOURCE_ROOT; };
@@ -364,7 +364,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE450B3145AE43D00B77D0E /* libQuickDialog.a in Frameworks */,
+				2CE450B3145AE43D00B77D0E /* libQuickDialogLib.a in Frameworks */,
 				D86035C613E0539A00CB1785 /* MapKit.framework in Frameworks */,
 				D86035C413E0538600CB1785 /* CoreLocation.framework in Frameworks */,
 				D80B0E3813E052DF00FA85CA /* UIKit.framework in Frameworks */,
@@ -400,7 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				D80B0E3313E052DF00FA85CA /* QuickDialogExample.app */,
-				2C542393145ADEBD0026A152 /* libQuickDialog.a */,
+				2C542393145ADEBD0026A152 /* libQuickDialogLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -711,9 +711,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2C542392145ADEBD0026A152 /* QuickDialog */ = {
+		2C542392145ADEBD0026A152 /* QuickDialogLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C54239D145ADEBE0026A152 /* Build configuration list for PBXNativeTarget "QuickDialog" */;
+			buildConfigurationList = 2C54239D145ADEBE0026A152 /* Build configuration list for PBXNativeTarget "QuickDialogLib" */;
 			buildPhases = (
 				2C54238F145ADEBD0026A152 /* Sources */,
 				2C542390145ADEBD0026A152 /* Frameworks */,
@@ -723,9 +723,9 @@
 			);
 			dependencies = (
 			);
-			name = QuickDialog;
+			name = QuickDialogLib;
 			productName = libQuickDialog;
-			productReference = 2C542393145ADEBD0026A152 /* libQuickDialog.a */;
+			productReference = 2C542393145ADEBD0026A152 /* libQuickDialogLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D80B0E3213E052DF00FA85CA /* QuickDialogExample */ = {
@@ -767,7 +767,7 @@
 			projectRoot = "";
 			targets = (
 				D80B0E3213E052DF00FA85CA /* QuickDialogExample */,
-				2C542392145ADEBD0026A152 /* QuickDialog */,
+				2C542392145ADEBD0026A152 /* QuickDialogLib */,
 			);
 		};
 /* End PBXProject section */
@@ -889,7 +889,7 @@
 /* Begin PBXTargetDependency section */
 		2CE450B2145AE43700B77D0E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C542392145ADEBD0026A152 /* QuickDialog */;
+			target = 2C542392145ADEBD0026A152 /* QuickDialogLib */;
 			targetProxy = 2CE450B1145AE43700B77D0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1022,7 +1022,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C54239D145ADEBE0026A152 /* Build configuration list for PBXNativeTarget "QuickDialog" */ = {
+		2C54239D145ADEBE0026A152 /* Build configuration list for PBXNativeTarget "QuickDialogLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C54239B145ADEBE0026A152 /* Debug */,
