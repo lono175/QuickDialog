@@ -164,6 +164,128 @@
 		F2F23A26152DD48B00EB6685 /* QPickerTabDelimitedStringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A1F152DD48B00EB6685 /* QPickerTabDelimitedStringParser.m */; };
 		F2F23A26152DD48B00EB6687 /* QuickDialogController+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A26152DD48B00EB6686 /* QuickDialogController+Helpers.m */; };
 		F2F23A26152DD48B00EB6689 /* QuickDialogController+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F23A26152DD48B00EB6688 /* QuickDialogController+Helpers.h */; };
+		F951A4A4166DF4C200A8FEF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80B0E3913E052DF00FA85CA /* Foundation.framework */; };
+		F951A4AA166DF4C200A8FEF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F951A4A8166DF4C200A8FEF9 /* InfoPlist.strings */; };
+		F951A529166DF54800A8FEF9 /* DOAutocompleteTextField.h in Sources */ = {isa = PBXBuildFile; fileRef = 194C3FC014EDF0510036C9E7 /* DOAutocompleteTextField.h */; };
+		F951A52A166DF54800A8FEF9 /* DOAutocompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C3FC114EDF0510036C9E7 /* DOAutocompleteTextField.m */; };
+		F951A52D166DF56A00A8FEF9 /* QPickerElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A1A152DD48B00EB6685 /* QPickerElement.m */; };
+		F951A52E166DF56A00A8FEF9 /* QPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A1C152DD48B00EB6685 /* QPickerTableViewCell.m */; };
+		F951A52F166DF56A00A8FEF9 /* QPickerTabDelimitedStringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A1F152DD48B00EB6685 /* QPickerTabDelimitedStringParser.m */; };
+		F951A530166DF56A00A8FEF9 /* NSMutableArray+IMSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D894F38915559D34000E3C0F /* NSMutableArray+IMSExtensions.m */; };
+		F951A531166DF56A00A8FEF9 /* QuickDialogController+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F23A26152DD48B00EB6686 /* QuickDialogController+Helpers.m */; };
+		F951A532166DF56A00A8FEF9 /* QuickDialogWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CD1 /* QuickDialogWebController.m */; };
+		F951A533166DF56A00A8FEF9 /* QSegmentedElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B394681514E8B3008ECB34 /* QSegmentedElement.m */; };
+		F951A534166DF56A00A8FEF9 /* QEmptyListElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B3944A151394E1008ECB34 /* QEmptyListElement.m */; };
+		F951A535166DF56A00A8FEF9 /* QMultilineElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B3944C151394E1008ECB34 /* QMultilineElement.m */; };
+		F951A536166DF56A00A8FEF9 /* QMultilineTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B3944F151394E1008ECB34 /* QMultilineTextViewController.m */; };
+		F951A537166DF56A00A8FEF9 /* NSMutableArray+MoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CC7 /* NSMutableArray+MoveObject.m */; };
+		F951A538166DF56A00A8FEF9 /* QAutoEntryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D87B4FC614F16197006DA833 /* QAutoEntryElement.m */; };
+		F951A539166DF56A00A8FEF9 /* QAutoEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D87B4FC814F16197006DA833 /* QAutoEntryTableViewCell.m */; };
+		F951A53A166DF56A00A8FEF9 /* QTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CC3 /* QTableViewCell.m */; };
+		F951A53B166DF56A00A8FEF9 /* QDynamicDataSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CBF /* QDynamicDataSection.m */; };
+		F951A53C166DF56A00A8FEF9 /* QLoadingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CBB /* QLoadingElement.m */; };
+		F951A53D166DF56A00A8FEF9 /* QRootBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CB6 /* QRootBuilder.m */; };
+		F951A53E166DF56A00A8FEF9 /* QBindingEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CB2 /* QBindingEvaluator.m */; };
+		F951A53F166DF56A00A8FEF9 /* QBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CA7 /* QBadgeLabel.m */; };
+		F951A540166DF56A00A8FEF9 /* QDecimalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0C9A /* QDecimalTableViewCell.m */; };
+		F951A541166DF56A00A8FEF9 /* QDecimalElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0C97 /* QDecimalElement.m */; };
+		F951A542166DF56A00A8FEF9 /* QBadgeElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F88513EC905B00E3922B /* QBadgeElement.m */; };
+		F951A543166DF56A00A8FEF9 /* QBadgeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F88713EC905B00E3922B /* QBadgeTableCell.m */; };
+		F951A544166DF56A00A8FEF9 /* QBooleanElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F88913EC905B00E3922B /* QBooleanElement.m */; };
+		F951A545166DF56A00A8FEF9 /* QButtonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F88B13EC905B00E3922B /* QButtonElement.m */; };
+		F951A546166DF56A00A8FEF9 /* QDateEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F88D13EC905B00E3922B /* QDateEntryTableViewCell.m */; };
+		F951A547166DF56A00A8FEF9 /* QDateTimeElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F88F13EC905B00E3922B /* QDateTimeElement.m */; };
+		F951A548166DF56A00A8FEF9 /* QDateTimeInlineElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F89113EC905B00E3922B /* QDateTimeInlineElement.m */; };
+		F951A549166DF56A00A8FEF9 /* QElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F89313EC905B00E3922B /* QElement.m */; };
+		F951A54A166DF56A00A8FEF9 /* QTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F2304356156CDFDD006D0A56 /* QTextField.m */; };
+		F951A54B166DF56A00A8FEF9 /* QEntryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F89513EC905B00E3922B /* QEntryElement.m */; };
+		F951A54C166DF56A00A8FEF9 /* QEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F89713EC905B00E3922B /* QEntryTableViewCell.m */; };
+		F951A54D166DF56A00A8FEF9 /* QFloatElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F89913EC905B00E3922B /* QFloatElement.m */; };
+		F951A54E166DF56A00A8FEF9 /* QLabelElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F89B13EC905B00E3922B /* QLabelElement.m */; };
+		F951A54F166DF56A00A8FEF9 /* QMapElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F89D13EC905B00E3922B /* QMapElement.m */; };
+		F951A550166DF56A00A8FEF9 /* QMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F89F13EC905B00E3922B /* QMapViewController.m */; };
+		F951A551166DF56A00A8FEF9 /* QMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8A113EC905B00E3922B /* QMapAnnotation.m */; };
+		F951A552166DF56A00A8FEF9 /* QuickDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8A313EC905B00E3922B /* QuickDialogController.m */; };
+		F951A553166DF56A00A8FEF9 /* QuickDialogController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8A513EC905B00E3922B /* QuickDialogController+Loading.m */; };
+		F951A554166DF56A00A8FEF9 /* QuickDialogController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0748D165A7D08004E7035 /* QuickDialogController+Navigation.m */; };
+		F951A555166DF56A00A8FEF9 /* QuickDialogDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8A713EC905B00E3922B /* QuickDialogDataSource.m */; };
+		F951A556166DF56A00A8FEF9 /* QuickDialogTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8AA13EC905B00E3922B /* QuickDialogTableDelegate.m */; };
+		F951A557166DF56A00A8FEF9 /* QuickDialogTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8AC13EC905B00E3922B /* QuickDialogTableView.m */; };
+		F951A558166DF56A00A8FEF9 /* QRadioElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8AF13EC905B00E3922B /* QRadioElement.m */; };
+		F951A559166DF56A00A8FEF9 /* QRadioItemElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8B113EC905B00E3922B /* QRadioItemElement.m */; };
+		F951A55A166DF56A00A8FEF9 /* QRadioSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8B313EC905B00E3922B /* QRadioSection.m */; };
+		F951A55B166DF56A00A8FEF9 /* QSelectSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E6149D151C9E4D00F36976 /* QSelectSection.m */; };
+		F951A55C166DF56A00A8FEF9 /* QSelectItemElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E614A1151CA1A100F36976 /* QSelectItemElement.m */; };
+		F951A55D166DF56A00A8FEF9 /* QRootElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8B513EC905B00E3922B /* QRootElement.m */; };
+		F951A55E166DF56A00A8FEF9 /* QRootElement+JsonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D871018514BB3D7A00156D9D /* QRootElement+JsonBuilder.m */; };
+		F951A55F166DF56A00A8FEF9 /* QSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8B713EC905B00E3922B /* QSection.m */; };
+		F951A560166DF56A00A8FEF9 /* QSortingSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8B913EC905B00E3922B /* QSortingSection.m */; };
+		F951A561166DF56A00A8FEF9 /* QTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8BB13EC905B00E3922B /* QTextElement.m */; };
+		F951A562166DF56A00A8FEF9 /* QWebElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8BD13EC905B00E3922B /* QWebElement.m */; };
+		F951A563166DF56A00A8FEF9 /* QWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D811F8BF13EC905B00E3922B /* QWebViewController.m */; };
+		F951A564166DF56A00A8FEF9 /* QuickDialogController+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50EBF53D28B761CBA809FF /* QuickDialogController+Animations.m */; };
+		F951A565166DF57700A8FEF9 /* QPickerElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F23A19152DD48B00EB6685 /* QPickerElement.h */; };
+		F951A566166DF57700A8FEF9 /* QPickerTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F23A1B152DD48B00EB6685 /* QPickerTableViewCell.h */; };
+		F951A567166DF57700A8FEF9 /* QPickerValueParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F23A1D152DD48B00EB6685 /* QPickerValueParser.h */; };
+		F951A568166DF57700A8FEF9 /* QPickerTabDelimitedStringParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F23A1E152DD48B00EB6685 /* QPickerTabDelimitedStringParser.h */; };
+		F951A569166DF57700A8FEF9 /* NSMutableArray+IMSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D894F38815559D34000E3C0F /* NSMutableArray+IMSExtensions.h */; };
+		F951A56A166DF57700A8FEF9 /* QuickDialogController+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F23A26152DD48B00EB6688 /* QuickDialogController+Helpers.h */; };
+		F951A56B166DF57700A8FEF9 /* QuickDialogWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CD3 /* QuickDialogWebController.h */; };
+		F951A56C166DF57700A8FEF9 /* QSegmentedElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B394671514E8B3008ECB34 /* QSegmentedElement.h */; };
+		F951A56D166DF57700A8FEF9 /* QEmptyListElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B39449151394E1008ECB34 /* QEmptyListElement.h */; };
+		F951A56E166DF57700A8FEF9 /* QMultilineElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B3944B151394E1008ECB34 /* QMultilineElement.h */; };
+		F951A56F166DF57700A8FEF9 /* QMultilineTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B3944E151394E1008ECB34 /* QMultilineTextViewController.h */; };
+		F951A570166DF57700A8FEF9 /* NSMutableArray+MoveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CC9 /* NSMutableArray+MoveObject.h */; };
+		F951A571166DF57700A8FEF9 /* DOAutocompleteTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = D87B4FC314F16197006DA833 /* DOAutocompleteTextField.h */; };
+		F951A572166DF57700A8FEF9 /* QAutoEntryElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D87B4FC514F16197006DA833 /* QAutoEntryElement.h */; };
+		F951A573166DF57700A8FEF9 /* QAutoEntryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D87B4FC714F16197006DA833 /* QAutoEntryTableViewCell.h */; };
+		F951A574166DF57700A8FEF9 /* QTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CC5 /* QTableViewCell.h */; };
+		F951A575166DF57700A8FEF9 /* QDynamicDataSection.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CC1 /* QDynamicDataSection.h */; };
+		F951A576166DF57700A8FEF9 /* QLoadingElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CBD /* QLoadingElement.h */; };
+		F951A577166DF57700A8FEF9 /* QuickDialogEntryElementDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CB9 /* QuickDialogEntryElementDelegate.h */; };
+		F951A578166DF57700A8FEF9 /* QRootBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CB8 /* QRootBuilder.h */; };
+		F951A579166DF57700A8FEF9 /* QBindingEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CB4 /* QBindingEvaluator.h */; };
+		F951A57A166DF57700A8FEF9 /* QBadgeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0CA9 /* QBadgeLabel.h */; };
+		F951A57B166DF57700A8FEF9 /* QuickDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0C9E /* QuickDialog.h */; };
+		F951A57C166DF57700A8FEF9 /* QDecimalTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0C9C /* QDecimalTableViewCell.h */; };
+		F951A57D166DF57700A8FEF9 /* QDecimalElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F180E813F0599A009B0C99 /* QDecimalElement.h */; };
+		F951A57E166DF57700A8FEF9 /* QBadgeElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F88413EC905B00E3922B /* QBadgeElement.h */; };
+		F951A57F166DF57700A8FEF9 /* QBadgeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F88613EC905B00E3922B /* QBadgeTableCell.h */; };
+		F951A580166DF57700A8FEF9 /* QBooleanElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F88813EC905B00E3922B /* QBooleanElement.h */; };
+		F951A581166DF57700A8FEF9 /* QButtonElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F88A13EC905B00E3922B /* QButtonElement.h */; };
+		F951A582166DF57700A8FEF9 /* QDateEntryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F88C13EC905B00E3922B /* QDateEntryTableViewCell.h */; };
+		F951A583166DF57700A8FEF9 /* QDateTimeElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F88E13EC905B00E3922B /* QDateTimeElement.h */; };
+		F951A584166DF57700A8FEF9 /* QDateTimeInlineElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F89013EC905B00E3922B /* QDateTimeInlineElement.h */; };
+		F951A585166DF57700A8FEF9 /* QElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F89213EC905B00E3922B /* QElement.h */; };
+		F951A586166DF57700A8FEF9 /* QTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = F2304355156CDFDD006D0A56 /* QTextField.h */; };
+		F951A587166DF57700A8FEF9 /* QEntryElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F89413EC905B00E3922B /* QEntryElement.h */; };
+		F951A588166DF57700A8FEF9 /* QEntryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F89613EC905B00E3922B /* QEntryTableViewCell.h */; };
+		F951A589166DF57700A8FEF9 /* QFloatElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F89813EC905B00E3922B /* QFloatElement.h */; };
+		F951A58A166DF57700A8FEF9 /* QLabelElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F89A13EC905B00E3922B /* QLabelElement.h */; };
+		F951A58B166DF57700A8FEF9 /* QMapElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F89C13EC905B00E3922B /* QMapElement.h */; };
+		F951A58C166DF57700A8FEF9 /* QMapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F89E13EC905B00E3922B /* QMapViewController.h */; };
+		F951A58D166DF57700A8FEF9 /* QMapAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8A013EC905B00E3922B /* QMapAnnotation.h */; };
+		F951A58E166DF57700A8FEF9 /* QuickDialogController.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8A213EC905B00E3922B /* QuickDialogController.h */; };
+		F951A58F166DF57700A8FEF9 /* QuickDialogController+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8A413EC905B00E3922B /* QuickDialogController+Loading.h */; };
+		F951A590166DF57700A8FEF9 /* QuickDialogController+Navigation.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E0748C165A7D08004E7035 /* QuickDialogController+Navigation.h */; };
+		F951A591166DF57700A8FEF9 /* QuickDialogDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8A613EC905B00E3922B /* QuickDialogDataSource.h */; };
+		F951A592166DF57700A8FEF9 /* QuickDialogStyleProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8A813EC905B00E3922B /* QuickDialogStyleProvider.h */; };
+		F951A593166DF57700A8FEF9 /* QuickDialogTableDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8A913EC905B00E3922B /* QuickDialogTableDelegate.h */; };
+		F951A594166DF57700A8FEF9 /* QuickDialogTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8AB13EC905B00E3922B /* QuickDialogTableView.h */; };
+		F951A595166DF57700A8FEF9 /* QRadioElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8AE13EC905B00E3922B /* QRadioElement.h */; };
+		F951A596166DF57700A8FEF9 /* QRadioItemElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8B013EC905B00E3922B /* QRadioItemElement.h */; };
+		F951A597166DF57700A8FEF9 /* QRadioSection.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8B213EC905B00E3922B /* QRadioSection.h */; };
+		F951A598166DF57700A8FEF9 /* QSelectSection.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E6149C151C9E4D00F36976 /* QSelectSection.h */; };
+		F951A599166DF57700A8FEF9 /* QSelectItemElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E614A0151CA1A100F36976 /* QSelectItemElement.h */; };
+		F951A59A166DF57700A8FEF9 /* QRootElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8B413EC905B00E3922B /* QRootElement.h */; };
+		F951A59B166DF57700A8FEF9 /* QRootElement+JsonBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D871018414BB3D7A00156D9D /* QRootElement+JsonBuilder.h */; };
+		F951A59C166DF57700A8FEF9 /* QSection.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8B613EC905B00E3922B /* QSection.h */; };
+		F951A59D166DF57700A8FEF9 /* QSortingSection.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8B813EC905B00E3922B /* QSortingSection.h */; };
+		F951A59E166DF57700A8FEF9 /* QTextElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8BA13EC905B00E3922B /* QTextElement.h */; };
+		F951A59F166DF57700A8FEF9 /* QWebElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8BC13EC905B00E3922B /* QWebElement.h */; };
+		F951A5A0166DF57700A8FEF9 /* QWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D811F8BE13EC905B00E3922B /* QWebViewController.h */; };
+		F951A5A1166DF57700A8FEF9 /* DOAutocompleteTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 194C3FC014EDF0510036C9E7 /* DOAutocompleteTextField.h */; };
+		F951A5A2166DF57700A8FEF9 /* QuickDialogController+Animations.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C50E22D2B906D69252BE7B4 /* QuickDialogController+Animations.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,6 +469,10 @@
 		F2F23A1F152DD48B00EB6685 /* QPickerTabDelimitedStringParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPickerTabDelimitedStringParser.m; path = quickdialog/QPickerTabDelimitedStringParser.m; sourceTree = SOURCE_ROOT; };
 		F2F23A26152DD48B00EB6686 /* QuickDialogController+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "QuickDialogController+Helpers.m"; path = "quickdialog/QuickDialogController+Helpers.m"; sourceTree = SOURCE_ROOT; };
 		F2F23A26152DD48B00EB6688 /* QuickDialogController+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "QuickDialogController+Helpers.h"; path = "quickdialog/QuickDialogController+Helpers.h"; sourceTree = SOURCE_ROOT; };
+		F951A4A3166DF4C200A8FEF9 /* QuickDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = QuickDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F951A4A7166DF4C200A8FEF9 /* QuickDialog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickDialog-Info.plist"; sourceTree = "<group>"; };
+		F951A4A9166DF4C200A8FEF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F951A4AB166DF4C200A8FEF9 /* QuickDialog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickDialog-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +499,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F951A49D166DF4C200A8FEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F951A4A4166DF4C200A8FEF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -391,6 +525,7 @@
 				2CE450A8145ADF8000B77D0E /* libQuickDialog */,
 				D860356713E0534000CB1785 /* quickdialog */,
 				D80B0E3D13E052DF00FA85CA /* sample */,
+				F951A4A5166DF4C200A8FEF9 /* QuickDialog */,
 				D80B0E3613E052DF00FA85CA /* Frameworks */,
 				D80B0E3413E052DF00FA85CA /* Products */,
 			);
@@ -401,6 +536,7 @@
 			children = (
 				D80B0E3313E052DF00FA85CA /* QuickDialogExample.app */,
 				2C542393145ADEBD0026A152 /* libQuickDialogLib.a */,
+				F951A4A3166DF4C200A8FEF9 /* QuickDialog.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -637,6 +773,24 @@
 			name = QPickerElement;
 			sourceTree = "<group>";
 		};
+		F951A4A5166DF4C200A8FEF9 /* QuickDialog */ = {
+			isa = PBXGroup;
+			children = (
+				F951A4A6166DF4C200A8FEF9 /* Supporting Files */,
+			);
+			path = QuickDialog;
+			sourceTree = "<group>";
+		};
+		F951A4A6166DF4C200A8FEF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F951A4A7166DF4C200A8FEF9 /* QuickDialog-Info.plist */,
+				F951A4A8166DF4C200A8FEF9 /* InfoPlist.strings */,
+				F951A4AB166DF4C200A8FEF9 /* QuickDialog-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -708,6 +862,75 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F951A49E166DF4C200A8FEF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F951A565166DF57700A8FEF9 /* QPickerElement.h in Headers */,
+				F951A566166DF57700A8FEF9 /* QPickerTableViewCell.h in Headers */,
+				F951A567166DF57700A8FEF9 /* QPickerValueParser.h in Headers */,
+				F951A568166DF57700A8FEF9 /* QPickerTabDelimitedStringParser.h in Headers */,
+				F951A569166DF57700A8FEF9 /* NSMutableArray+IMSExtensions.h in Headers */,
+				F951A56A166DF57700A8FEF9 /* QuickDialogController+Helpers.h in Headers */,
+				F951A56B166DF57700A8FEF9 /* QuickDialogWebController.h in Headers */,
+				F951A56C166DF57700A8FEF9 /* QSegmentedElement.h in Headers */,
+				F951A56D166DF57700A8FEF9 /* QEmptyListElement.h in Headers */,
+				F951A56E166DF57700A8FEF9 /* QMultilineElement.h in Headers */,
+				F951A56F166DF57700A8FEF9 /* QMultilineTextViewController.h in Headers */,
+				F951A570166DF57700A8FEF9 /* NSMutableArray+MoveObject.h in Headers */,
+				F951A571166DF57700A8FEF9 /* DOAutocompleteTextField.h in Headers */,
+				F951A572166DF57700A8FEF9 /* QAutoEntryElement.h in Headers */,
+				F951A573166DF57700A8FEF9 /* QAutoEntryTableViewCell.h in Headers */,
+				F951A574166DF57700A8FEF9 /* QTableViewCell.h in Headers */,
+				F951A575166DF57700A8FEF9 /* QDynamicDataSection.h in Headers */,
+				F951A576166DF57700A8FEF9 /* QLoadingElement.h in Headers */,
+				F951A577166DF57700A8FEF9 /* QuickDialogEntryElementDelegate.h in Headers */,
+				F951A578166DF57700A8FEF9 /* QRootBuilder.h in Headers */,
+				F951A579166DF57700A8FEF9 /* QBindingEvaluator.h in Headers */,
+				F951A57A166DF57700A8FEF9 /* QBadgeLabel.h in Headers */,
+				F951A57B166DF57700A8FEF9 /* QuickDialog.h in Headers */,
+				F951A57C166DF57700A8FEF9 /* QDecimalTableViewCell.h in Headers */,
+				F951A57D166DF57700A8FEF9 /* QDecimalElement.h in Headers */,
+				F951A57E166DF57700A8FEF9 /* QBadgeElement.h in Headers */,
+				F951A57F166DF57700A8FEF9 /* QBadgeTableCell.h in Headers */,
+				F951A580166DF57700A8FEF9 /* QBooleanElement.h in Headers */,
+				F951A581166DF57700A8FEF9 /* QButtonElement.h in Headers */,
+				F951A582166DF57700A8FEF9 /* QDateEntryTableViewCell.h in Headers */,
+				F951A583166DF57700A8FEF9 /* QDateTimeElement.h in Headers */,
+				F951A584166DF57700A8FEF9 /* QDateTimeInlineElement.h in Headers */,
+				F951A585166DF57700A8FEF9 /* QElement.h in Headers */,
+				F951A586166DF57700A8FEF9 /* QTextField.h in Headers */,
+				F951A587166DF57700A8FEF9 /* QEntryElement.h in Headers */,
+				F951A588166DF57700A8FEF9 /* QEntryTableViewCell.h in Headers */,
+				F951A589166DF57700A8FEF9 /* QFloatElement.h in Headers */,
+				F951A58A166DF57700A8FEF9 /* QLabelElement.h in Headers */,
+				F951A58B166DF57700A8FEF9 /* QMapElement.h in Headers */,
+				F951A58C166DF57700A8FEF9 /* QMapViewController.h in Headers */,
+				F951A58D166DF57700A8FEF9 /* QMapAnnotation.h in Headers */,
+				F951A58E166DF57700A8FEF9 /* QuickDialogController.h in Headers */,
+				F951A58F166DF57700A8FEF9 /* QuickDialogController+Loading.h in Headers */,
+				F951A590166DF57700A8FEF9 /* QuickDialogController+Navigation.h in Headers */,
+				F951A591166DF57700A8FEF9 /* QuickDialogDataSource.h in Headers */,
+				F951A592166DF57700A8FEF9 /* QuickDialogStyleProvider.h in Headers */,
+				F951A593166DF57700A8FEF9 /* QuickDialogTableDelegate.h in Headers */,
+				F951A594166DF57700A8FEF9 /* QuickDialogTableView.h in Headers */,
+				F951A595166DF57700A8FEF9 /* QRadioElement.h in Headers */,
+				F951A596166DF57700A8FEF9 /* QRadioItemElement.h in Headers */,
+				F951A597166DF57700A8FEF9 /* QRadioSection.h in Headers */,
+				F951A598166DF57700A8FEF9 /* QSelectSection.h in Headers */,
+				F951A599166DF57700A8FEF9 /* QSelectItemElement.h in Headers */,
+				F951A59A166DF57700A8FEF9 /* QRootElement.h in Headers */,
+				F951A59B166DF57700A8FEF9 /* QRootElement+JsonBuilder.h in Headers */,
+				F951A59C166DF57700A8FEF9 /* QSection.h in Headers */,
+				F951A59D166DF57700A8FEF9 /* QSortingSection.h in Headers */,
+				F951A59E166DF57700A8FEF9 /* QTextElement.h in Headers */,
+				F951A59F166DF57700A8FEF9 /* QWebElement.h in Headers */,
+				F951A5A0166DF57700A8FEF9 /* QWebViewController.h in Headers */,
+				F951A5A1166DF57700A8FEF9 /* DOAutocompleteTextField.h in Headers */,
+				F951A5A2166DF57700A8FEF9 /* QuickDialogController+Animations.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -746,6 +969,28 @@
 			productReference = D80B0E3313E052DF00FA85CA /* QuickDialogExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F951A4A2166DF4C200A8FEF9 /* QuickDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F951A4AC166DF4C200A8FEF9 /* Build configuration list for PBXNativeTarget "QuickDialog" */;
+			buildPhases = (
+				F951A49B166DF4C200A8FEF9 /* ShellScript */,
+				F951A49C166DF4C200A8FEF9 /* Sources */,
+				F951A49D166DF4C200A8FEF9 /* Frameworks */,
+				F951A49E166DF4C200A8FEF9 /* Headers */,
+				F951A49F166DF4C200A8FEF9 /* Resources */,
+				F951A4A0166DF4C200A8FEF9 /* ShellScript */,
+				F951A4A1166DF4C200A8FEF9 /* ShellScript */,
+				F951A4B3166DF4F900A8FEF9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickDialog;
+			productName = QuickDialog;
+			productReference = F951A4A3166DF4C200A8FEF9 /* QuickDialog.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -768,6 +1013,7 @@
 			targets = (
 				D80B0E3213E052DF00FA85CA /* QuickDialogExample */,
 				2C542392145ADEBD0026A152 /* QuickDialogLib */,
+				F951A4A2166DF4C200A8FEF9 /* QuickDialog */,
 			);
 		};
 /* End PBXProject section */
@@ -801,7 +1047,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F951A49F166DF4C200A8FEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F951A4AA166DF4C200A8FEF9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F951A49B166DF4C200A8FEF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		F951A4A0166DF4C200A8FEF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+		};
+		F951A4A1166DF4C200A8FEF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+		F951A4B3166DF4F900A8FEF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=${PROJECT_NAME}\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=${BUILT_PRODUCTS_DIR}/${FMK_NAME}.framework\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${WRK_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Remove the working direcotry\n# rm -rf \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C54238F145ADEBD0026A152 /* Sources */ = {
@@ -884,6 +1193,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F951A49C166DF4C200A8FEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F951A52D166DF56A00A8FEF9 /* QPickerElement.m in Sources */,
+				F951A52E166DF56A00A8FEF9 /* QPickerTableViewCell.m in Sources */,
+				F951A52F166DF56A00A8FEF9 /* QPickerTabDelimitedStringParser.m in Sources */,
+				F951A530166DF56A00A8FEF9 /* NSMutableArray+IMSExtensions.m in Sources */,
+				F951A531166DF56A00A8FEF9 /* QuickDialogController+Helpers.m in Sources */,
+				F951A532166DF56A00A8FEF9 /* QuickDialogWebController.m in Sources */,
+				F951A533166DF56A00A8FEF9 /* QSegmentedElement.m in Sources */,
+				F951A534166DF56A00A8FEF9 /* QEmptyListElement.m in Sources */,
+				F951A535166DF56A00A8FEF9 /* QMultilineElement.m in Sources */,
+				F951A536166DF56A00A8FEF9 /* QMultilineTextViewController.m in Sources */,
+				F951A537166DF56A00A8FEF9 /* NSMutableArray+MoveObject.m in Sources */,
+				F951A52A166DF54800A8FEF9 /* DOAutocompleteTextField.m in Sources */,
+				F951A538166DF56A00A8FEF9 /* QAutoEntryElement.m in Sources */,
+				F951A539166DF56A00A8FEF9 /* QAutoEntryTableViewCell.m in Sources */,
+				F951A53A166DF56A00A8FEF9 /* QTableViewCell.m in Sources */,
+				F951A53B166DF56A00A8FEF9 /* QDynamicDataSection.m in Sources */,
+				F951A53C166DF56A00A8FEF9 /* QLoadingElement.m in Sources */,
+				F951A53D166DF56A00A8FEF9 /* QRootBuilder.m in Sources */,
+				F951A53E166DF56A00A8FEF9 /* QBindingEvaluator.m in Sources */,
+				F951A53F166DF56A00A8FEF9 /* QBadgeLabel.m in Sources */,
+				F951A540166DF56A00A8FEF9 /* QDecimalTableViewCell.m in Sources */,
+				F951A541166DF56A00A8FEF9 /* QDecimalElement.m in Sources */,
+				F951A542166DF56A00A8FEF9 /* QBadgeElement.m in Sources */,
+				F951A543166DF56A00A8FEF9 /* QBadgeTableCell.m in Sources */,
+				F951A544166DF56A00A8FEF9 /* QBooleanElement.m in Sources */,
+				F951A545166DF56A00A8FEF9 /* QButtonElement.m in Sources */,
+				F951A546166DF56A00A8FEF9 /* QDateEntryTableViewCell.m in Sources */,
+				F951A547166DF56A00A8FEF9 /* QDateTimeElement.m in Sources */,
+				F951A548166DF56A00A8FEF9 /* QDateTimeInlineElement.m in Sources */,
+				F951A549166DF56A00A8FEF9 /* QElement.m in Sources */,
+				F951A54A166DF56A00A8FEF9 /* QTextField.m in Sources */,
+				F951A54B166DF56A00A8FEF9 /* QEntryElement.m in Sources */,
+				F951A54C166DF56A00A8FEF9 /* QEntryTableViewCell.m in Sources */,
+				F951A54D166DF56A00A8FEF9 /* QFloatElement.m in Sources */,
+				F951A54E166DF56A00A8FEF9 /* QLabelElement.m in Sources */,
+				F951A54F166DF56A00A8FEF9 /* QMapElement.m in Sources */,
+				F951A550166DF56A00A8FEF9 /* QMapViewController.m in Sources */,
+				F951A551166DF56A00A8FEF9 /* QMapAnnotation.m in Sources */,
+				F951A552166DF56A00A8FEF9 /* QuickDialogController.m in Sources */,
+				F951A553166DF56A00A8FEF9 /* QuickDialogController+Loading.m in Sources */,
+				F951A554166DF56A00A8FEF9 /* QuickDialogController+Navigation.m in Sources */,
+				F951A555166DF56A00A8FEF9 /* QuickDialogDataSource.m in Sources */,
+				F951A556166DF56A00A8FEF9 /* QuickDialogTableDelegate.m in Sources */,
+				F951A557166DF56A00A8FEF9 /* QuickDialogTableView.m in Sources */,
+				F951A558166DF56A00A8FEF9 /* QRadioElement.m in Sources */,
+				F951A559166DF56A00A8FEF9 /* QRadioItemElement.m in Sources */,
+				F951A55A166DF56A00A8FEF9 /* QRadioSection.m in Sources */,
+				F951A55B166DF56A00A8FEF9 /* QSelectSection.m in Sources */,
+				F951A55C166DF56A00A8FEF9 /* QSelectItemElement.m in Sources */,
+				F951A55D166DF56A00A8FEF9 /* QRootElement.m in Sources */,
+				F951A55E166DF56A00A8FEF9 /* QRootElement+JsonBuilder.m in Sources */,
+				F951A55F166DF56A00A8FEF9 /* QSection.m in Sources */,
+				F951A560166DF56A00A8FEF9 /* QSortingSection.m in Sources */,
+				F951A561166DF56A00A8FEF9 /* QTextElement.m in Sources */,
+				F951A562166DF56A00A8FEF9 /* QWebElement.m in Sources */,
+				F951A563166DF56A00A8FEF9 /* QWebViewController.m in Sources */,
+				F951A564166DF56A00A8FEF9 /* QuickDialogController+Animations.m in Sources */,
+				F951A529166DF54800A8FEF9 /* DOAutocompleteTextField.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -899,6 +1273,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				D811F8E313EC907200E3922B /* InfoPlist.strings */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F951A4A8166DF4C200A8FEF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F951A4A9166DF4C200A8FEF9 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1019,6 +1401,57 @@
 			};
 			name = Release;
 		};
+		F951A4AD166DF4C200A8FEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickDialog/QuickDialog-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "QuickDialog/QuickDialog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		F951A4AE166DF4C200A8FEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickDialog/QuickDialog-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "QuickDialog/QuickDialog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1048,6 +1481,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F951A4AC166DF4C200A8FEF9 /* Build configuration list for PBXNativeTarget "QuickDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F951A4AD166DF4C200A8FEF9 /* Debug */,
+				F951A4AE166DF4C200A8FEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
