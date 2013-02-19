@@ -13,7 +13,7 @@
 //
 
 #import "QDecimalTableViewCell.h"
-
+#import "QuickDialog.h"
 @implementation QDecimalTableViewCell {
     NSNumberFormatter *_numberFormatter;
 }
@@ -81,9 +81,9 @@
     [self updateTextFieldFromElement];
     
     if(_entryElement && _entryElement.delegate && [_entryElement.delegate respondsToSelector:@selector(QEntryShouldChangeCharactersInRangeForElement:andCell:)]){
-        [_entryElement.delegate QEntryShouldChangeCharactersInRangeForElement:_entryElement andCell:self];
+        [_entryElement.delegate QEntryShouldChangeCharactersInRange:range withString:replacement forElement:_entryElement andCell:self];
     }
-    
+
     return NO;
 }
 

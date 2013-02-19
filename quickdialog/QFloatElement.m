@@ -22,15 +22,24 @@
 
 - (QFloatElement *)initWithTitle:(NSString *)title value:(float)value {
     self = [super initWithTitle:title Value:nil] ;
-    _floatValue = value;
+    if (self) {
+        _floatValue = value;
+        _minimumValue = 0.0;
+        _maximumValue = 1.0;
+        self.enabled = YES;
+    }
     return self;
 }
 
 
 - (QElement *)initWithValue:(float)value {
     self = [super init];
-    _floatValue = value;
-
+    if (self) {
+        _floatValue = value;
+        _minimumValue = 0.0;
+        _maximumValue = 1.0;
+        self.enabled = YES;
+    }
     return self;
 }
 
@@ -42,7 +51,6 @@
 
 - (CGFloat)calculateSliderWidth:(QuickDialogTableView *)view cell:(UITableViewCell *)cell {
     CGFloat width = view.contentSize.width;
-    if ( width > 320.0 ) width -= 70.0;
     if (_title==nil)
         width -= 40;
     else
@@ -51,7 +59,10 @@
 }
 
 - (void)valueChanged:(UISlider *)slider {
-   _floatValue = slider.value;
+   self.floatValue = slider.value;
+
+    if (self.onValueChanged!=nil)
+        self.onValueChanged(self);
 }
 
 - (UITableViewCell *)getCellForTableView:(QuickDialogTableView *)tableView controller:(QuickDialogController *)controller {
@@ -65,6 +76,16 @@
     slider.value = _floatValue;
     cell.accessoryView = slider;
     return cell;
+}
+
+- (void)setNilValueForKey:(NSString *)key;
+{
+    if ([key isEqualToString:@"floatValue"]){
+        self.floatValue = 0;
+    }
+    else {
+        [super setNilValueForKey:key];
+    }
 }
 
 

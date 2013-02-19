@@ -42,7 +42,7 @@
 - (void)handleSegmentedControlValueChanged:(id)control {
     _selected = ((UISegmentedControl *)control).selectedSegmentIndex - 1;
     if (self.onValueChanged!=nil)
-        self.onValueChanged();
+        self.onValueChanged(self);
 
     [self handleElementSelected:_controller];
 }
@@ -60,13 +60,13 @@
     [item addObject:@""];
     [item insertObject:@"" atIndex:0];
     
+    
+    const BOOL isPhone = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone;
+    
     CGRect frame = cell.contentView.bounds;
     frame.origin.x -=1;
-    frame.size.width -= 35;
+    frame.size.width -= (isPhone ? 150 : 35);
     frame.size.height -= 15;
-    
-    //const BOOL isPhone = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone;
-    //CGRect frame = CGRectMake(isPhone ? 9 : 30, 7.5, isPhone ? 302 : 260, 30.0);
 
     UIView * container = [[UIView alloc] initWithFrame: frame];
     //container.autoresizingMask = UIViewAutoresizingFlexibleWidth;

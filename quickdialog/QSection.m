@@ -13,9 +13,12 @@
 //
 
 #import "QBindingEvaluator.h"
+#import "QSection.h"
+#import "QuickDialog.h"
 
 @implementation QSection {
 @private
+    id _object;
     NSString *_headerImage;
     NSString *_footerImage;
     NSDictionary *_elementTemplate;
@@ -41,6 +44,8 @@
 
 @synthesize hidden = _hidden;
 @dynamic visibleIndex;
+@synthesize object = _object;
+
 
 - (QElement *)getVisibleElementForIndex:(NSInteger)index
 {

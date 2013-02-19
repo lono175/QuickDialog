@@ -1,12 +1,16 @@
 #import "QuickDialogController+Navigation.h"
-
+#import "QRootBuilder.h"
+#import "QuickDialog.h"
 
 @implementation QuickDialogController(Navigation)
 
 
 
 - (void)displayViewController:(UIViewController *)newController {
-    if (self.navigationController != nil ){
+    if ([newController isKindOfClass:[UINavigationController class]]) {
+        [self presentModalViewController:newController animated:YES];
+    }
+    else if (self.navigationController != nil){
         [self.navigationController pushViewController:newController animated:YES];
     } else {
         [self presentModalViewController:[[UINavigationController alloc] initWithRootViewController:newController] animated:YES];
@@ -73,21 +77,20 @@
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
     [self.quickDialogTableView reloadData];
     self.popoverForChildRoot = nil;
-
 }
 
-
 - (void)popToPreviousRootElementOnMainThread {
-
     if ([self popoverBeingPresented]!=nil){
         [self.popoverBeingPresented dismissPopoverAnimated:YES];
         if (self.popoverBeingPresented.delegate!=nil){
             [self.popoverBeingPresented.delegate popoverControllerDidDismissPopover:self.popoverBeingPresented];
         }
     }
-    else if (self.navigationController!=nil){
+    else if (self.navigationController!=nil && [self.navigationController.viewControllers objectAtIndex:0]!=self){
         [self.navigationController popViewControllerAnimated:YES];
-    } else {
+    } else if (self.presentingViewController!=nil)
+        [self dismissViewControllerAnimated:YES completion:nil];
+    else {
         [self dismissModalViewControllerAnimated:YES];
     }
 }

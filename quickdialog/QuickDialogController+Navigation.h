@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
+#import "QuickDialogController.h"
 
+@class QRootElement;
 @interface QuickDialogController(Navigation)
 
 - (void)displayViewController:(UIViewController *)newController;
@@ -9,5 +11,8 @@
 - (void)displayViewControllerInPopover:(UIViewController *)newController withNavigation:(BOOL)navigation fromRect:(CGRect)position;
 
 - (void)displayViewControllerInPopover:(UIViewController *)newController withNavigation:(BOOL)navigation;
+
+- (void)popToPreviousRootElement;
+
 
 @end

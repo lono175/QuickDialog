@@ -14,13 +14,16 @@
 
 #import <objc/message.h>
 #import "QBindingEvaluator.h"
+#import "QElement.h"
+#import "QuickDialog.h"
 
 @implementation QElement {
 @private
-    NSObject *_object;
+    id _object;
     NSString *_controllerAccessoryAction;
 }
 
+@synthesize enabled = _enabled;
 @synthesize parentSection = _parentSection;
 @synthesize key = _key;
 @synthesize bind = _bind;
@@ -37,30 +40,42 @@
 
 - (QElement *)init {
     self = [super init];
-
+    if (self) {
+        self.enabled = YES;
+    }
     return self;
 }
 
 - (QElement *)initWithKey:(NSString *)key {
     self = [super init];
-    self.key = key;
+    if (self){
+        self.key = key;
+        self.enabled = YES;
+    }
     return self;
 }
 
 - (UITableViewCell *)getCellForTableView:(QuickDialogTableView *)tableView controller:(QuickDialogController *)controller {
-    QTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"QuickformElementCell%@", self.key]];
-    if (cell == nil){
-        cell = [[QTableViewCell alloc] initWithReuseIdentifier:[NSString stringWithFormat:@"QuickformElementCell%@", self.key]];
-    }
-    
+    QTableViewCell *cell= [self getOrCreateEmptyCell:tableView];
+
+    [cell applyAppearanceForElement:self];
+
     cell.textLabel.text = nil; 
     cell.detailTextLabel.text = nil; 
     cell.imageView.image = nil; 
-
+    cell.userInteractionEnabled = self.enabled;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.showsReorderControl = YES;
     cell.accessoryView = nil;
     cell.labelingPolicy = _labelingPolicy;
+    return cell;
+}
+
+- (QTableViewCell *)getOrCreateEmptyCell:(QuickDialogTableView *)tableView {
+    QTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"QuickformElementCell%@", self.key]];
+    if (cell == nil){
+        cell = [[QTableViewCell alloc] initWithReuseIdentifier:[NSString stringWithFormat:@"QuickformElementCell%@", self.key]];
+    }
     return cell;
 }
 
@@ -91,7 +106,6 @@
 
 - (void)selected:(QuickDialogTableView *)tableView controller:(QuickDialogController *)controller indexPath:(NSIndexPath *)indexPath {
     [[tableView cellForRowAtIndexPath:indexPath] becomeFirstResponder];
-
     [self handleElementSelected:controller];
 }
 

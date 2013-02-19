@@ -13,6 +13,8 @@
 // permissions and limitations under the License.
 //
 
+#import "QAutoEntryTableViewCell.h"
+#import "QuickDialog.h"
 
 @implementation QAutoEntryTableViewCell {
     NSString *_lastFullStringWithAutocompletion;
@@ -72,6 +74,8 @@
     } else {
         _autoCompleteField.inputAccessoryView = [self createActionBar];
     }
+
+    _autoCompleteField.userInteractionEnabled = element.enabled;
 
     [self updatePrevNextStatus];
 }
