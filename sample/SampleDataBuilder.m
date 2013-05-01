@@ -177,7 +177,7 @@
     [controls addElement:autoElement];
 	
     [controls addElement:boolElement];
-	QDateTimeInlineElement *dateElement = [[QDateTimeInlineElement alloc] initWithTitle:@"DateTime" date:[NSDate date]];
+	QDateTimeInlineElement *dateElement = [[QDateTimeInlineElement alloc] initWithTitle:@"DateTime" date:[NSDate date] andMode:UIDatePickerModeDateAndTime];
 	dateElement.key = @"date1";
     [controls addElement:dateElement];
 
@@ -574,20 +574,23 @@
     QSection *section = [[QSection alloc] init];
     section.title = @"Inline editing";
 
-    QDateTimeInlineElement *el2 = [[QDateTimeInlineElement alloc] initWithTitle:@"Today" date:[NSDate date]];
+    QDateTimeInlineElement *el2 = [[QDateTimeInlineElement alloc] initWithTitle:@"Today" date:[NSDate date] andMode:UIDatePickerModeDate];
     [section addElement:el2];
 
-    QDateTimeInlineElement *el3 = [[QDateTimeInlineElement alloc] initWithTitle:@"Date only" date:[NSDate date]];
-    el3.mode = UIDatePickerModeDate;
+    QDateTimeInlineElement *el3 = [[QDateTimeInlineElement alloc] initWithTitle:@"Date only" date:[NSDate date] andMode:UIDatePickerModeDate];
     [section addElement:el3];
 
-    QDateTimeInlineElement *el4 = [[QDateTimeInlineElement alloc] initWithTitle:@"Time only" date:[NSDate date]];
-    el4.mode = UIDatePickerModeTime;
+    QDateTimeInlineElement *el4 = [[QDateTimeInlineElement alloc] initWithTitle:@"Time only" date:[NSDate date] andMode:UIDatePickerModeTime];
     [section addElement:el4];
 
     QDateTimeInlineElement *elDiffTime = [[QDateTimeInlineElement alloc] initWithTitle:@"Different date" date:
-            [NSDate dateWithTimeIntervalSinceNow:-36000]];
+            [NSDate dateWithTimeIntervalSinceNow:-36000] andMode:UIDatePickerModeDate];
     [section addElement:elDiffTime];
+    
+    QCountdownElement *countDown = [[QCountdownElement alloc] init];
+    countDown.title = @"Countdown";
+    countDown.ticksValue = [NSNumber numberWithDouble: 9780.0]; // 2Hr 43Min
+    [section addElement:countDown];    
 
     QSection *section2 = [[QSection alloc] init];
     section2.title = @"Push editing";

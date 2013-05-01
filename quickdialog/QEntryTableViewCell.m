@@ -88,7 +88,7 @@
                 QEntryElement *q = (QEntryElement*)el; 
                 CGFloat imageWidth = q.image == NULL ? 0 : self.imageView.frame.size.width;
                 CGFloat fontSize = self.textLabel.font.pointSize == 0? 17 : self.textLabel.font.pointSize;
-                CGSize size = [((QEntryElement *)el).title sizeWithFont:[self.textLabel.font fontWithSize:fontSize] forWidth:CGFLOAT_MAX lineBreakMode:UILineBreakModeWordWrap] ;
+                CGSize size = [((QEntryElement *)el).title sizeWithFont:[self.textLabel.font fontWithSize:fontSize] forWidth:CGFLOAT_MAX lineBreakMode:NSLineBreakByWordWrapping] ;
                 CGFloat width = size.width + imageWidth;
                 if (width>titleWidth)
                     titleWidth = width;
@@ -184,7 +184,7 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 50 * USEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [_quickformTableView scrollToRowAtIndexPath:[_quickformTableView indexForElement:_entryElement] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+        [_quickformTableView scrollToRowAtIndexPath:[_entryElement getIndexPath] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
     });
 
 
@@ -254,7 +254,7 @@
 		}
         else {
 
-            [_quickformTableView scrollToRowAtIndexPath:[_quickformTableView indexForElement:element]
+            [_quickformTableView scrollToRowAtIndexPath:[element getIndexPath]
                                        atScrollPosition:UITableViewScrollPositionMiddle
                                                animated:YES];
 
@@ -267,6 +267,12 @@
             });
         }
 	}
+    
+    if (_entryElement.keepSelected) {
+        [_quickformTableView deselectRowAtIndexPath:[_entryElement getIndexPath] animated:YES];
+    }
+
+    [control setSelectedSegmentIndex:UISegmentedControlNoSegment];
 }
 
 - (BOOL)handleActionBarDone:(UIBarButtonItem *)doneButton {
