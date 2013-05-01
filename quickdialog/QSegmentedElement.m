@@ -3,9 +3,12 @@
 //
 #import "QSegmentedElement.h"
 
-@implementation QSegmentedElement {
-    QuickDialogController *_controller;
-}
+@interface QSegmentedElement()
+@property (nonatomic, weak) QuickDialogController* controller; //Lono: avoid cyclic reference
+@end
+
+@implementation QSegmentedElement
+
 - (void)setItems:(NSArray *)anItems {
     if (_items != anItems) {
         NSMutableArray * n = [NSMutableArray arrayWithCapacity:anItems.count];
